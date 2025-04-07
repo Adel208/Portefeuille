@@ -47,10 +47,10 @@ export default function ContactForm() {
       <div className="row gx-3 gy-4">
         <div className="col-md-6">
           <div className="form-group">
-            <label className="form-label">Your Name</label>
+            <label className="form-label">Votre Nom</label>
             <input
-              name="name"
-              placeholder="Name *"
+              name="nom"
+              placeholder="Nom *"
               className="form-control"
               type="text"
               value={formData.name}
@@ -61,7 +61,7 @@ export default function ContactForm() {
         </div>
         <div className="col-md-6">
           <div className="form-group">
-            <label className="form-label">Your Email</label>
+            <label className="form-label">Votre Email</label>
             <input
               name="email"
               placeholder="Email *"
@@ -75,10 +75,10 @@ export default function ContactForm() {
         </div>
         <div className="col-12">
           <div className="form-group">
-            <label className="form-label">Subject</label>
+            <label className="form-label">Sujet</label>
             <input
               name="subject"
-              placeholder="Subject *"
+              placeholder="Sujet *"
               className="form-control"
               type="text"
               value={formData.subject}
@@ -89,10 +89,10 @@ export default function ContactForm() {
         </div>
         <div className="col-md-12">
           <div className="form-group">
-            <label className="form-label">Your message</label>
+            <label className="form-label">Votre message</label>
             <textarea
               name="message"
-              placeholder="Your message *"
+              placeholder="Message *"
               rows={4}
               className="form-control"
               value={formData.message}
@@ -107,7 +107,7 @@ export default function ContactForm() {
               className={`px-btn w-100 ${loading ? 'disabled' : ''}`}
               type="submit"
             >
-              {loading ? 'Sending...' : 'Send Message'}
+              {loading ? 'Sending...' : 'Envoyer'}
             </button>
           </div>
         </div>
